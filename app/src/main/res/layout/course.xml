@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Which course are you studying\n at Dharamshala College"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+            <androidx.fragment.app.FragmentContainerView
+                android:layout_width="match_parent"
+                android:id="@+id/courses_year_frag"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Continue"
+        android:id="@+id/continu"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/main"
+        app:cornerRadius="40dp" />
+</RelativeLayout>

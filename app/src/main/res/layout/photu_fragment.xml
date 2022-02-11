@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/scroll"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/swipeup"
+            android:layout_gravity="bottom"
+            android:elevation="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatMode="restart"
+            app:lottie_fileName="swipeup.json"
+            app:lottie_repeatCount="100"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:id="@+id/viewpagerimages"
+            android:layout_height="match_parent"/>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tabs"
+            android:layout_marginLeft="20dp"
+            app:tabIndicatorAnimationDuration="2"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabPaddingEnd="3dp"
+            android:layout_marginRight="20dp"
+            app:tabIndicatorColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_height="20dp"/>
+        <FrameLayout
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent">
+                <TextView
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/course"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/gray"
+            android:text="About Me"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/description"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/gray"
+            android:text="Habits"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/habits"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/gray"
+            android:text="My Hobbies"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        <GridView
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:id="@+id/hobbies"
+            android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:id="@+id/lottie_anim1"
+        app:lottie_autoPlay="true"
+        android:layout_margin="30dp"
+        app:lottie_fileName="intro.json"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+    <TextView
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="Data"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/black"
+        android:text="The Archive is based on data provided by people using it and we respect your privacy"
+        android:layout_width="250dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+</LinearLayout>

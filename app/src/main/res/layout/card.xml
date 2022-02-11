@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="370dp"
+    android:layout_height="450dp"
+    app:strokeWidth="1dp"
+    android:id="@+id/tindercard"
+    android:transitionGroup="true"
+    android:transitionName="photuus"
+    app:strokeColor="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/main"
+    app:cardCornerRadius="20dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            android:indeterminateTint="@color/white"
+            android:layout_height="80dp"/>
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:id="@+id/image"
+            android:transitionName="photus"
+            android:layout_height="match_parent"/>
+        <FrameLayout
+            android:elevation="20dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:id="@+id/tobeblurred"/>
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent">
+            <TextView
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:text="Ankit, 19"
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Bsc Mathematics, 1st year"
+                android:layout_width="wrap_content"
+                android:id="@+id/course"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

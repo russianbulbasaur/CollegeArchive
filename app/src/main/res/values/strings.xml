@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DShala College Archive</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="databaseurl">https://thearchive-3900b-default-rtdb.asia-southeast1.firebasedatabase.app/</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="red_room">https://www.google.com</string>
+    <string name="terms">By signing up, you agree to our <a href="">Terms and Conditions</a></string>
+    <string name="key">676056533328-satd58sdqrurl9amh05qjvg8ahmvpl5v.apps.googleusercontent.com</string>
+    <string name="url">https://thearchiveee.000webhostapp.com</string>
+</resources>

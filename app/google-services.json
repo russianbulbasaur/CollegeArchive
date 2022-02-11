@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "676056533328",
+    "firebase_url": "https://thearchive-3900b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "thearchive-3900b",
+    "storage_bucket": "thearchive-3900b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676056533328:android:8939246d0d958cd66b8455",
+        "android_client_info": {
+          "package_name": "mein.mutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676056533328-9niua7f2r7r444sfvjk2cl36ic8l4slm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mein.mutter",
+            "certificate_hash": "6904ccde80a18262fd4579f04ce265b534335d9a"
+          }
+        },
+        {
+          "client_id": "676056533328-satd58sdqrurl9amh05qjvg8ahmvpl5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdL-vDTMOgTQV36heqPBgLTSBvccbL5yA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676056533328-satd58sdqrurl9amh05qjvg8ahmvpl5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
